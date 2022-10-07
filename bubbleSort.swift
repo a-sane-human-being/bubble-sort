@@ -26,7 +26,7 @@ func sort () {
     var totalCount = 0
     var functionInvoke = true
     var unsortedArray = unsortedStrings
-    print("Pass: \(0), Swaps: \(tempCount)/\(totalCount), Array: \(unsortedArray)")
+//    print("Pass: \(0), Swaps: \(tempCount)/\(totalCount), Array: \(unsortedArray)")
     while(functionInvoke){
         for i in 0 ..< unsortedArray.count{
             for j in 1 ..< unsortedArray.count - i{
@@ -37,7 +37,7 @@ func sort () {
                     swap(integers:&unsortedArray, firstIndex:j, secondIndex:j-1)
                 }
             }
-            print("Pass: \(i+1), Swaps: \(tempCount)/\(totalCount), Array: \(unsortedArray)")
+  //          print("Pass: \(i+1), Swaps: \(tempCount)/\(totalCount), Array: \(unsortedArray)")
 
             if(tempCount == 0) {
                 functionInvoke = false
